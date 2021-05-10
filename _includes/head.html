@@ -1,0 +1,36 @@
+<head>
+
+  {% assign title = page.title | default: site.title | escape %}
+  {% assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  {% assign keywords = page.keywords | default: site.keywords | strip_html | strip_newlines | truncate: 740 %}
+
+  {% if page.name and page.collection == 'projects' %}
+    {% assign title = page.name | escape %}
+  {% endif %}
+
+  <title>{{ title }}</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="type" content="website">
+  <meta name="title" content="{{ title }}">
+  <meta name="description" content="{{ description }}">
+  <meta name="keywords" content="{{ keywords }}">
+  <meta name="msvalidate.01" content="61A492274EFD9069082BE3AE68DDF34A" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" type="text/css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="{{ '/assets/css/animate.css' | relative_url }}" type="text/css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css"> 
+
+</head>

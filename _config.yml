@@ -1,0 +1,37 @@
+### Site Settings ###
+title               : Portal Demonstração
+
+description         : >-
+                      O portal é uma ferramenta desenvolvida pela We Comply Soluções em Compliance para registro de denúncias.
+# Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : "/portal"
+# Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : WeComply/portal
+#remote_theme       : wecomply.github.io
+keywords            : >-
+                      We Comply, Portal de Denúncias, Canal de Denúncias, Ouvidoria, Compliance, LGPD, Lei Geral de Proteção de Dados.
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/404.md
+  - pages/index.md
+  #- pages/politica-cookies.md
+
+
+### Author Info ###
+author:
+  name              : Portal Demonstração
+  image             : /portal/img/logodemo.png
+  email             : portaldedenuncias@wecomply.com.br
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
